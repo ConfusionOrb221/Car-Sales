@@ -15,7 +15,7 @@ const initialState = {
         { id: 3, name: 'Premium sound system', price: 500 },
         { id: 4, name: 'Rear spoiler', price: 250 }
     ]
-}
+};
 
 function reducer(state = initialState, action){
     switch(action.type){
@@ -37,7 +37,7 @@ function reducer(state = initialState, action){
                     ...state.car,
                     features: [...state.car.features, action.payload]
                 }
-            }
+            };
         default:
             return state;
     }
